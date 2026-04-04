@@ -587,6 +587,16 @@ section:nth-child(odd):not(#hero) { background:var(--bg-s); }
   .skills-icons { grid-template-columns:repeat(3,1fr); }
   .skill-row { grid-template-columns:12rem 1fr 3rem; }
 }
+.cat-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: .6rem;
+}
+.dot-frontend { background: #00e5ff; box-shadow: 0 0 6px rgba(0,229,255,.7); }
+.dot-backend  { background: #f97316; box-shadow: 0 0 6px rgba(249,115,22,.7); }
+.dot-db       { background: #a855f7; box-shadow: 0 0 6px rgba(168,85,247,.7); }
+.dot-tools    { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,.7); }
 
 /* ══════════════════════════════
    PROYECTOS
