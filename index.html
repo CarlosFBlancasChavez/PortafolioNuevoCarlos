@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carlos Blancas — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">CB.</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <!--<li><a href="#contacto">Contacto</a></li>-->
+  </ul>
+  <!--<a href="#contacto" class="nav-cta">Hablemos →</a>-->
+  <button class="burger" id="burger"><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-eyebrow">
+    <span class="pulse"></span>
+    <span>Disponible · Lima, Perú</span>
+  </div>
+
+  <h1 class="hero-title">
+    <span class="line-wrap"><span class="reveal-line">Carlos</span></span>
+    <span class="line-wrap"><span class="reveal-line delay-1">Blancas.</span></span>
+  </h1>
+
+  <div class="hero-sub">
+    <div class="hero-role">
+      <span class="mono-label">rol_actual</span>
+      <span id="typed-text"></span><span class="blink-cursor">|</span>
+    </div>
+    <p class="hero-desc">
+      Estudiante de Ingeniería de Software construyendo interfaces web 
+      modernas — desde el primer <code>&lt;div&gt;</code> hasta el deploy.
+    </p>
+  </div>
+
+ <div class="hero-actions">
+  <a href="#proyectos" class="cta-main">Ver proyectos</a>
+  <a href="https://wa.me/51987654321" target="_blank" class="cta-sec">
+    <i class="ri-whatsapp-line"></i> Contactar
+  </a>
+</div>
+
+  <div class="hero-stats">
+    <div class="hstat"><span class="hstat-n">5+</span><span>Proyectos</span></div>
+    <div class="hstat-divider"></div>
+    <div class="hstat"><span class="hstat-n">8+</span><span>Tecnologías</span></div>
+    <div class="hstat-divider"></div>
+    <div class="hstat"><span class="hstat-n">3+</span><span>Años estudiando</span></div>
+  </div>
+
+  <div class="hero-socials">
+    <a href="https://github.com/CarlosFBlancasChavez" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+    <a href="https://www.linkedin.com/in/carlos-blancas-2365b72b3/" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+    <a href="https://www.instagram.com/c.blancas07/" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+  </div>
+
+  <div class="hero-image-wrap">
+    <div class="hero-img-bg"></div>
+    <img src="perfil11-removebg-preview.png" alt="Carlos Blancas" class="hero-img"/>
+    <div class="hero-tag tag-html"><i class="ri-html5-fill"></i> HTML</div>
+    <div class="hero-tag tag-css"><i class="ri-css3-fill"></i> CSS</div>
+    <div class="hero-tag tag-js"><i class="ri-javascript-fill"></i> JS</div>
+    <div class="hero-tag tag-react"><i class="fa-brands fa-react"></i> React</div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre">
+  <div class="section-tag">01 — sobre mí</div>
+  <div class="sobre-grid">
+    <div class="sobre-left">
+      <h2 class="section-title">Quien<br/><em>soy.</em></h2>
+      <div class="sobre-img-container">
+       
+        <div class="sobre-img-accent"></div>
+      </div>
+    </div>
+    <div class="sobre-right">
+      <p class="sobre-big">
+        Soy <strong>estudiante de Ingeniería de Software</strong> con enfoque en 
+        el desarrollo frontend. Me interesa crear experiencias digitales que sean 
+        funcionales, rápidas y visualmente cuidadas.
+      </p>
+      <p class="sobre-normal">
+        Trabajo con <strong>HTML, CSS y JavaScript</strong> como base, y 
+        actualmente profundizo en <strong>React</strong> mediante proyectos 
+        personales que pongo en producción.
+      </p>
+      <p class="sobre-normal">
+        Mi objetivo es seguir creciendo como desarrollador, colaborar en 
+        proyectos reales y convertirme en un profesional que une buen código 
+        con buen diseño.
+      </p>
+      <div class="sobre-ctas">
+        <a href="CV-CARLOS_FRANCO_BLANCAS_CHÁVEZ.docx.pdf" target="_blank" class="cta-main">
+          <i class="ri-download-2-line"></i> Descargar CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag">02 — habilidades</div>
+  <h2 class="section-title">Tech<br/><em>Stack.</em></h2>
+
+  <div class="skills-main">
+    <div class="skills-col">
+      <p class="skills-cat">Frontend</p>
+      <div class="skill-row" data-p="75">
+        <div class="sk-left"><img src="html-5 (1)-Photoroom.png" alt=""/><span>HTML5</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">75</span>
+      </div>
+      <div class="skill-row" data-p="70">
+        <div class="sk-left"><img src="css-3-Photoroom.png" alt=""/><span>CSS3</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">70</span>
+      </div>
+      <div class="skill-row" data-p="55">
+        <div class="sk-left"><img src="js.png" alt=""/><span>JavaScript</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">55</span>
+      </div>
+      <div class="skill-row" data-p="45">
+        <div class="sk-left"><img src="React.png" alt=""/><span>React.js</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">45</span>
+      </div>
+
+      <p class="skills-cat" style="margin-top:4rem">Herramientas</p>
+      <div class="skill-row" data-p="65">
+        <div class="sk-left"><img src="figma.png" alt=""/><span>Figma</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">65</span>
+      </div>
+      <div class="skill-row" data-p="60">
+        <div class="sk-left"><img src="python.png" alt=""/><span>Python</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">60</span>
+      </div>
+      <div class="skill-row" data-p="45">
+        <div class="sk-left"><img src="github.png" alt=""/><span>Git / GitHub</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">45</span>
+      </div>
+      <div class="skill-row" data-p="40">
+        <div class="sk-left"><img src="sql.png" alt=""/><span>MySQL</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">40</span>
+      </div>
+      <div class="skill-row" data-p="45">
+        <div class="sk-left"><img src="mongodb.png" alt=""/><span>MongoDB</span></div>
+        <div class="sk-bar-wrap"><div class="sk-bar"></div></div>
+        <span class="sk-num">45</span>
+      </div> 
+    </div>
+
+    <div class="skills-icons">
+      <div class="sk-icon"><img src="html-5 (1)-Photoroom.png" alt=""/><span>HTML5</span></div>
+      <div class="sk-icon"><img src="css-3-Photoroom.png" alt=""/><span>CSS3</span></div>
+      <div class="sk-icon"><img src="js.png" alt=""/><span>JavaScript</span></div>
+      <div class="sk-icon"><img src="React.png" alt=""/><span>React</span></div>
+      <div class="sk-icon"><img src="figma.png" alt=""/><span>Figma</span></div>
+      <div class="sk-icon"><img src="python.png" alt=""/><span>Python</span></div>
+      <div class="sk-icon"><img src="github.png" alt=""/><span>GitHub</span></div>
+      <div class="sk-icon"><img src="sql.png" alt=""/><span>MySQL</span></div>
+      <div class="sk-icon"><img src="mongodb.png" alt=""/><span>MongoDB</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="section-tag">03 — proyectos</div>
+  <h2 class="section-title">Lo que he<br/><em>construido.</em></h2>
+
+  <!-- Proyecto featured -->
+  <div class="proj-featured">
+    <div class="proj-feat-img">
+      <img src="mediconnect.png" alt="MediConnect"/>
+      <div class="proj-feat-overlay">
+        <a href="https://marlonlasarte.github.io/Mediconnect_LandingPage/" target="_blank">
+          <i class="ri-external-link-line"></i>
+        </a>
+        <a href="https://github.com/CarlosFBlancasChavez" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      </div>
+    </div>
+    <div class="proj-feat-info">
+      <span class="proj-number">01</span>
+      <span class="proj-badge">Proyecto destacado</span>
+      <h3>MediConnect</h3>
+      <p>Bitácora digital compartida para pacientes. Desarrollado como proyecto universitario con enfoque en UX, accesibilidad e interfaces limpias.</p>
+      <div class="proj-pills">
+        <span><i class="ri-html5-fill"></i>HTML</span>
+        <span><i class="ri-css3-fill"></i>CSS</span>
+        <span><i class="ri-javascript-fill"></i>JS</span>
+      </div>
+      <a href="https://marlonlasarte.github.io/Mediconnect_LandingPage/" target="_blank" class="proj-live">
+        Ver en vivo <i class="ri-arrow-right-up-line"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Grid de proyectos -->
+  <div class="proj-grid">
+
+    <div class="proj-card">
+      <div class="proj-card-img">
+        <img src="SistemaAlquiler.png" alt="DriveNow"/>
+        <div class="proj-card-overlay">
+          <a href="https://vehicle-rental-five-alpha.vercel.app/" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <span class="proj-number-sm">02</span>
+        <h4>DriveNow</h4>
+        <p>Plataforma de alquiler de vehículos con reservas y panel admin. React + Vite.</p>
+        <div class="proj-pills">
+          <span><i class="fa-brands fa-react"></i>React</span>
+          <span><i class="ri-css3-fill"></i>CSS</span>
+          <span><i class="ri-javascript-fill"></i>JS</span>
+        </div>
+        <a href="https://vehicle-rental-five-alpha.vercel.app/" target="_blank" class="proj-live">
+          Ver en vivo <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-img">
+        <img src="optiRed.png" alt="OptiRed"/>
+        <div class="proj-card-overlay">
+          <a href="https://optired-proyecto.onrender.com" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <span class="proj-number-sm">03</span>
+        <h4>OptiRed</h4>
+        <p>Grafo geográfico de cobertura móvil basado en dataset real.</p>
+        <div class="proj-pills">
+          <span><i class="ri-html5-fill"></i>HTML</span>
+          <span><i class="fa-brands fa-python"></i>Python</span>
+        </div>
+        <a href="https://optired-proyecto.onrender.com" target="_blank" class="proj-live">
+          Ver en vivo <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-img">
+        <img src="pacmangame.png" alt="Pacman"/>
+        <div class="proj-card-overlay">
+          <a href="https://carlosfblancaschavez.github.io/Proyecto1_Pacman/" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <span class="proj-number-sm">04</span>
+        <h4>Pacman Game</h4>
+        <p>Juego clásico desde cero — colisiones, IA de fantasmas, canvas.</p>
+        <div class="proj-pills">
+          <span><i class="ri-html5-fill"></i>HTML</span>
+          <span><i class="ri-javascript-fill"></i>JS</span>
+        </div>
+        <a href="https://carlosfblancaschavez.github.io/Proyecto1_Pacman/" target="_blank" class="proj-live">
+          Ver en vivo <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-card-img">
+        <img src="AgenteViajero.png" alt="Agente Viajero"/>
+        <div class="proj-card-overlay">
+          <a href="https://carlosfblancaschavez.github.io/Agente-Viajero/" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <span class="proj-number-sm">05</span>
+        <h4>Agente Viajero</h4>
+        <p>Visualización interactiva del problema TSP con algoritmos de optimización.</p>
+        <div class="proj-pills">
+          <span><i class="ri-html5-fill"></i>HTML</span>
+          <span><i class="ri-javascript-fill"></i>JS</span>
+        </div>
+        <a href="https://carlosfblancaschavez.github.io/Agente-Viajero/" target="_blank" class="proj-live">
+          Ver en vivo <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="proj-card">
+      <div class="proj-card-img">
+        <img src="SistemaGestionVentas.png" alt="SistemaVentas"/>
+        <div class="proj-card-overlay">
+          <a href="apex-ventas.vercel.app" target="_blank"><i class="ri-external-link-line"></i></a>
+        </div>
+      </div>
+      <div class="proj-card-body">
+        <span class="proj-number-sm">06</span>
+        <h4>ApexVentas</h4>
+        <p>Sistema de Gestion de Ventas para tu negocio--- En desarrollo---</p>
+        <div class="proj-pills">
+          <span><i class="ri-html5-fill"></i>HTML</span>
+          <span><i class="fa-brands fa-python"></i>Python</span>
+        </div>
+        <a href="apex-ventas.vercel.app" target="_blank" class="proj-live">
+          Ver en vivo <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO 
+<section id="contacto">
+  <div class="section-tag">04 — contacto</div>
+  <div class="contacto-inner">
+    <div class="contacto-left">
+      <h2 class="section-title">¿Tienes un<br/>proyecto?<br/><em>Hablemos.</em></h2>
+      <p>Estoy disponible para prácticas, proyectos freelance y colaboraciones. Escríbeme y te respondo pronto.</p>
+      <div class="c-links">
+        <a href="mailto:carlosblancas@example.com" class="c-link">
+          <span class="c-link-icon"><i class="ri-mail-line"></i></span>
+          <div><small>Email</small><strong>carlosblancas@example.com</strong></div>
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-blancas-2365b72b3/" target="_blank" class="c-link">
+          <span class="c-link-icon"><i class="ri-linkedin-box-line"></i></span>
+          <div><small>LinkedIn</small><strong>carlos-blancas</strong></div>
+        </a>
+        <a href="https://github.com/CarlosFBlancasChavez" target="_blank" class="c-link">
+          <span class="c-link-icon"><i class="ri-github-line"></i></span>
+          <div><small>GitHub</small><strong>CarlosFBlancasChavez</strong></div>
+        </a>
+      </div>
+    </div>
+    <div class="contacto-right">
+      <div class="form-wrap">
+        <div class="fg"><label>Nombre</label><input type="text" placeholder="Tu nombre"/></div>
+        <div class="fg"><label>Email</label><input type="email" placeholder="tu@email.com"/></div>
+        <div class="fg"><label>Asunto</label><input type="text" placeholder="¿En qué puedo ayudarte?"/></div>
+        <div class="fg"><label>Mensaje</label><textarea rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea></div>
+        <button class="cta-main w100"><i class="ri-send-plane-line"></i> Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">CB.</span>
+    <p>© 2025 Carlos Franco Blancas Chávez — Diseñado y desarrollado con 🖤</p>
+    <div class="footer-soc">
+      <a href="https://github.com/CarlosFBlancasChavez" target="_blank"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/carlos-blancas-2365b72b3/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+    </div>
+  </div>
+  <a href="#hero" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
