@@ -32,7 +32,7 @@ navLinksEl.querySelectorAll('a').forEach(a => {
 });
 
 /* ── Typewriter ── */
-const words = ['Web Designer', 'Estudiante Ing. Software', 'UX/UI Designer', 'Data science'];
+const words = ['Estudiante Ing. Software', 'Data Analytics', 'Backend Developer', 'Frontend Developer'];
 let wi = 0, ci = 0, del = false;
 const typedEl = document.getElementById('typed-text');
 
